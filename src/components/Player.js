@@ -34,7 +34,7 @@ const Player = ({
         song.active = false;
       }
       if (isPlaying) audioRef.current.play();
-      return none;
+      return null;
     });
   };
   const playSongHandler = () => {
