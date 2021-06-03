@@ -5,6 +5,7 @@ import {
   faPlay,
   faAngleLeft,
   faAngleRight,
+  faBorderNone,
 } from "@fortawesome/free-solid-svg-icons";
 const Player = ({
   currentSong,
@@ -33,6 +34,7 @@ const Player = ({
         song.active = false;
       }
       if (isPlaying) audioRef.current.play();
+      return none;
     });
   };
   const playSongHandler = () => {
